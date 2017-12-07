@@ -36,6 +36,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".View_books"
+            android:label="Inserting"
+            android:parentActivityName=".Bookstore">
+            <intent-filter>
+                <action android:name="com.idoston.e_book_store.View_books"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

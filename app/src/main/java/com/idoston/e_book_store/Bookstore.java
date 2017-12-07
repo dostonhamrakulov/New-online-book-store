@@ -34,8 +34,8 @@ public class Bookstore extends AppCompatActivity {
         startActivity(intent);
     }
     public void View_all_books(View view){
-//        Intent intent = new Intent(Bookstore.this, View_books.class);
-//        startActivity(intent);
+        Intent intent = new Intent(Bookstore.this, View_books.class);
+        startActivity(intent);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
