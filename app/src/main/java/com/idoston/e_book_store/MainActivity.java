@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
 //        );
     }
     public void Bookstore(View view){
-//        Intent intent = new Intent(this, Bookstore.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, Bookstore.class);
+        startActivity(intent);
     }
 
     @Override

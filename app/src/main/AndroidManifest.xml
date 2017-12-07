@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Bookstore"
+            android:label="Bookstore"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="com.idoston.e_book_store.Bookstore" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
