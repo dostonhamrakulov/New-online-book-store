@@ -21,7 +21,7 @@ import java.util.List;
 
 public class Inserting_ebook extends AppCompatActivity {
 
-    //DatabaseHelper myDB;
+    DatabaseHelper myDB;
     Context context = this;
     SQLiteDatabase sqLiteDatabase;
 
@@ -48,7 +48,7 @@ public class Inserting_ebook extends AppCompatActivity {
         myActionBar.setLogo(R.drawable.ic_phone_android_black_24dp);
 
 
-        //myDB = new DatabaseHelper(this);
+        myDB = new DatabaseHelper(this);
 
         edit_category = (EditText) findViewById(R.id.id_insert_book_category);
         edit_author = (EditText) findViewById(R.id.id_insert_book_Author);
@@ -84,36 +84,28 @@ public class Inserting_ebook extends AppCompatActivity {
 
 
     }
-//    public void AddBook(View view){
-//        btn_insert.setOnClickListener(
-//                new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//
-//                        Category = edit_category.getText().toString();
-//                        Author = edit_author.getText().toString();
-//                        Title = edit_title.getText().toString();
-//                        Year = edit_year.getText().toString();
-//                        Pages = edit_pages.getText().toString();
-//                        Price = edit_price.getText().toString();
-//
-//                        myDB = new DatabaseHelper(context);
-//                        sqLiteDatabase = myDB.getReadableDatabase();
-//                        myDB.addInformation(Category, Author, Title, Year, Pages, Price, sqLiteDatabase);
-//                        Toast.makeText(Inserting_ebook.this, "New Book is inserted!!!", Toast.LENGTH_LONG).show();
-//                        myDB.close();
+    public void AddBook(View view){
+        btn_insert.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
 
+                        Category = edit_category.getText().toString();
+                        Author = edit_author.getText().toString();
+                        Title = edit_title.getText().toString();
+                        Year = edit_year.getText().toString();
+                        Pages = edit_pages.getText().toString();
+                        Price = edit_price.getText().toString();
 
-//                        boolean isInserted = myDB.insertBook(Category, Title, Author, Year, Pages, Price);
-//                        if (isInserted = true){
-//                            Toast.makeText(Inserting_ebook.this, "New Book inserted!!!", Toast.LENGTH_LONG).show();
-//                        } else {
-//                            Toast.makeText(Inserting_ebook.this, "Oops not inserted!!!", Toast.LENGTH_LONG).show();
-//                        }
-//                    }
-//                }
-//        );
-//    }
+                        myDB = new DatabaseHelper(context);
+                        sqLiteDatabase = myDB.getReadableDatabase();
+                        myDB.addInformation(Category, Author, Title, Year, Pages, Price, sqLiteDatabase);
+                        Toast.makeText(Inserting_ebook.this, "New Book is inserted!!!", Toast.LENGTH_LONG).show();
+                        myDB.close();
+                    }
+                }
+        );
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
