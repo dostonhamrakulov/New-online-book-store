@@ -56,7 +56,7 @@ public class Bookstore extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.icon_action_settings) {
             Toast.makeText(Bookstore.this, "Sorry, there is no any option for setting!!!", Toast.LENGTH_LONG).show();
             return true;
         }
