@@ -30,8 +30,8 @@ public class Bookstore extends AppCompatActivity {
 
     }
     public void Insert_ebook(View view){
-//        Intent intent = new Intent(Bookstore.this, Inserting_ebook.class);
-//        startActivity(intent);
+        Intent intent = new Intent(Bookstore.this, Inserting_ebook.class);
+        startActivity(intent);
     }
     public void View_all_books(View view){
 //        Intent intent = new Intent(Bookstore.this, View_books.class);

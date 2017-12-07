@@ -16,11 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Bookstore"
+        <activity
+            android:name=".Bookstore"
             android:label="Bookstore"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="com.idoston.e_book_store.Bookstore" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Inserting_ebook"
+            android:label="Inserting"
+            android:parentActivityName=".Bookstore">
+            <intent-filter>
+                <action android:name="com.idoston.e_book_store.Inserting_ebook" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
