@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Search_book_in_E-Library</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bookstore">Bookstore</string>
+    <string name="welcome">Welcome to online BOOKSTORE</string>
+    <string name="title_activity_inserting_ebook">Inserting_ebook</string>
+    <string name="title_activity_view_books">View_books</string>
+
+
+    <!-- these are for action bar`s icon-->
+
+    <string name="action_contactus">Contact Us</string>
+    <string name="action_aboutus">About Us</string>
+    <string name="action_exit_app">Exit</string>
+</resources>
